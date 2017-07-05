@@ -51,7 +51,7 @@ void delay(int time) {
 //recibimos un nuevo mensaje OSC
 void oscEvent(OscMessage theOscMessage) {
   if(theOscMessage.checkAddrPattern("/wek/outputs")){
-    //el valor de la clasificación de wekinator
+    //el valor de la clasificación de wekinator 
     int value = (int) theOscMessage.get(0).floatValue();
    
     if(value < 4.0){
